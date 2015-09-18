@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cirruslogic.hearingaids" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".DeviceList"
+            android:label="@string/app_name" >
+
+            <!--
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".HearingAidsControl"
+            android:label="@string/title_activity_hearing_aids_control" >
+        </activity>
+        <activity
+            android:name=".SelectConnection"
+            android:label="@string/title_activity_select_connection" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity
+            android:name=".TCPClient"
+            android:label="@string/title_activity_tcpclient" >
+        </activity>-->
+        <activity
+            android:name=".Wifi"
+            android:label="@string/title_activity_wifi" >
+        </activity>
+    </application>
+
+</manifest>
